@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exclusive Limited-Time Offer!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: #fef6e4;
+    }
+    .button {
+      background: #ff0050;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px;
+    }
+    .countdown {
+      font-size: 18px;
+      color: #ff0050;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 TikTok Followers Exclusive Deal!</h1>
+  <p>Your discount link will auto-redirect in <span id="countdown">5</span> seconds...</p>
+  <a href="https://fxo.co/ItWT" class="button">Jump Now (Manual Click)</a>
+
+  <script>
+    // 5-second countdown then auto-redirect
+    let time = 5;
+    const countdownEl = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      time--;
+      countdownEl.textContent = time;
+      if (time <= 0) {
+        clearInterval(timer);
+        window.location.href = "https://fxo.co/ItWT";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+
+
